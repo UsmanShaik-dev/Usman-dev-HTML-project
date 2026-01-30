@@ -1,0 +1,199 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FORMS</title>
+  </head>
+  <body>
+    <h1 style="text-align: center;">Course Registration Form</h1>
+    <hr><br>
+    <form action="#" method="POST" enctype="multipart/form-data">
+
+      <fieldset style="margin-left: 550; margin-right: 550;">
+        <legend><strong>Personal Details</strong></legend>
+        <table cellpadding="1" cellspacing="7"  >
+          <tbody>
+            <tr>
+              <td><label for="fn">First Name</label></td>
+              <td>
+                <input
+                  type="text"
+                  id="fn"
+                  name="FN"
+                  placeholder="Enter Your Name"
+                  size="15"
+                  maxlength="10"
+                  required=""
+                /><br />
+              </td>
+            </tr>
+            <tr>
+              <td><label for="ln">Surname</label></td>
+              <td>
+                <input
+                  type="text"
+                  id="ln"
+                  name="LN"
+                  placeholder="Enter Surname"
+                  size="15"
+                /><br />
+              </td>
+            </tr>
+            <tr>
+              <td><label for="mob">Mobile Number</label></td>
+              <td>
+                <input
+                  type="tel"
+                  id="mob"
+                  name="mob"
+                  placeholder="Enter Phone Number"
+                  size="15"
+                  pattern="[0-9]{10}"
+                  title="Enter 10 digit mobile number"
+                /><br />
+              </td>
+            </tr>
+            <tr>
+              <td><label for="mail">Email</label></td>
+              <td>
+                <input
+                  type="email"
+                  id="mail"
+                  name="mail"
+                  size="15"
+                  placeholder="Enter Email"
+                  required=""
+                /><br />
+              </td>
+            </tr>
+            <tr>
+              <td><label for="pwd">Password</label></td>
+              <td>
+                <input
+                  type="password"
+                  id="pwd"
+                  name="pwd"
+                  placeholder="Enter Password"
+                  size="15"
+                  minlength="5"
+                  maxlength="20"
+                  required=""
+                /><br />
+              </td>
+            </tr>
+            <tr>
+              <td><label for="cpwd">Confirm Password</label></td>
+              <td>
+                <input
+                  type="password"
+                  id="cpwd"
+                  name="cpwd"
+                  placeholder="Re-enter Password"
+                  size="15"
+                  minlength="5"
+                  required=""
+                /><br />
+              </td>
+            </tr>
+            <tr>
+              <td><label for="dob">DOB</label></td>
+              <td>
+                <input
+                  type="date"
+                  id="dob"
+                  name="dob"
+                  min="1950-01-01"
+                  max="2010-12-31"
+                /><br />
+              </td>
+            </tr>
+            <tr>
+              <td><label>Gender</label></td>
+              <td>
+                <input type="radio" id="male" name="gender" value="M" />
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="F" />
+                <label for="female">Female</label>
+                <input type="radio" id="other" name="gender" value="C" />
+                <label for="other">Other</label>
+              </td>
+            </tr>
+            <tr>
+              <td><label for="country">Select Country</label></td>
+              <td>
+                <select id="country" name="Country">
+                  <option value="" disabled="" selected="">-- Select --</option>
+                  <option value="INDIA">INDIA</option>
+                  <option value="USA">USA</option>
+                  <option value="China">China</option>
+                  <option value="UK">UK</option>
+                  <option value="Canada">Canada</option></select
+                ><br />
+              </td>
+            </tr>
+            <tr>
+              <td><label for="pic">Upload Picture</label></td>
+              <td>
+                <input type="file" id="pic" name="pic" accept="image/*" /><br />
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </fieldset>
+
+      <br />
+
+      <fieldset  style="margin-left: 500; margin-right: 500;">
+        <legend><strong>Course Details</strong></legend>
+        <table>
+          <tbody>
+            <tr>
+              <td><label for="course">Select Course</label></td>
+              <td>
+                <select id="course" name="Course">
+                  <option value="" disabled="" selected="">
+                    -- Select Course --
+                  </option>
+                  <option value="PFS">Python Full Stack</option>
+                  <option value="JFS">Java Full Stack</option>
+                  <option value="CJ">MERN STACK</option>
+                  <option value="PDS">Python for DataScience</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td><label for="mode">Delivery Mode</label></td>
+              <td>
+                <input type="radio" id="online" name="mode" value="ON" />
+                <label for="online">ONLINE</label>
+                <input type="radio" id="offline" name="mode" value="OFF" />
+                <label for="offline">OFFLINE</label>
+              </td>
+            </tr>
+            <tr>
+              <td><label for="Feedback">FeedBack</label></td>
+              <td>
+                <textarea
+                  id="comments"
+                  name="comments"
+                  rows="4"
+                  cols="40"
+                  placeholder="Enter your feedback or any additional comments..."
+                  maxlength="500"
+                  style="resize: none;"
+                ></textarea>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </fieldset>
+
+      
+      <p  style="margin-left: 675; margin-right: 500;">
+        <input type="submit" value=" Submit" />
+        &nbsp;&nbsp;
+        <input type="reset" value=" Reset All" />
+      </p>
+    </form>
+  </body>
+</html>
