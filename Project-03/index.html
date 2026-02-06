@@ -1,234 +1,208 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Portfolio of Mohammed Usman Shaik - Software Engineer skilled in Java, Python, and web technologies"
-    />
-    <title>Usman Shaik - Portfolio</title>
-    <link rel="stylesheet" href="./styles.css" />
-  </head>
 
-  <body>
-    <!-- Navigation -->
-    <nav class="nav-bar">
-      <div class="nav-container">
-        <ul class="nav-list">
-          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-          <li class="nav-item">
-            <a class="nav-link" href="#skills">Skills</a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Portfolio of Mohammed Usman Shaik - Software Engineer skilled in Java, Python, and web technologies" />
+  <title>Usman Shaik - Portfolio</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav class="nav-bar">
+    <div class="nav-container">
+      <ul class="nav-list">
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item">
+          <a class="nav-link" href="#skills">Skills</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#projects">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contacts</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./assets/Usman_Resume.pdf" download="">Download Resume</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="hero_container">
+    <video class="hero_video" autoplay loop muted playsinline preload="auto" poster="./assets/video-poster.jpg">
+      <source src="./assets/Mohammed-Usman-Shaik.webm" type="video/webm">
+      <source src="./assets/Mohammed Usman Shaik.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <!-- Header Section -->
+  <header>
+    <h1 class="head-text">Mohammed Usman Shaik - PORTFOLIO</h1>
+  </header>
+  \
+  <!-- Main Content -->
+  <main>
+    <!-- About Section -->
+    <section id="about" aria-labelledby="about-heading">
+      <div class="about-heading">
+        <h2>ABOUT</h2>
+      </div>
+      <p class="about">
+        I am Mohammed Usman Shaik, an aspiring Software Engineer and Web
+        Developer who completed B.E in Computer Science and Engineering from
+        Vemana Institute of Technology (CGPA: 6.9/10). <br />
+        <br />
+        I specialize in building secure and scalable applications using Java,
+        Spring Boot, REST APIs, React.js and relational databases. I enjoy
+        solving complex problems, optimizing system performance, and designing
+        clean, maintainable software architectures. I am actively seeking
+        opportunities in Software Engineering, Full Stack Development, Web
+        Development where I can contribute, learn, and grow in a professional
+        environment.
+      </p>
+      <p class="github">
+        <a href="https://www.github.com/usmanshaik-dev" target="_blank" rel="noopener noreferrer">
+          Click here to go to GitHub
+        </a>
+      </p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" aria-labelledby="skills-heading">
+      <h2 id="skills-heading">SKILLS</h2>
+
+      <table class="icon-table" cellpadding="10px" cellspacing="90px">
+        <tr>
+          <td>
+            <img class="icons" src="./assets/images/java.png" alt="" />
+            <p>Java</p>
+          </td>
+          <td>
+            <img class="icons" src="./assets/images/python.png" alt="" />
+            <p>Python</p>
+          </td>
+          <td>
+            <img class="icons" src="./assets/images/MySQL.png" alt="" />
+            <p>MySQL</p>
+          </td>
+          <td>
+            <img class="icons" src="./assets/images/Springboot.png" alt="" />
+            <p>Spring</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <img class="icons" src="./assets/images/HTML.png" alt="" />
+            <p>HTML</p>
+          </td>
+          <td>
+            <img class="icons" src="./assets/images/CSS.png" alt="" />
+            <p>CSS</p>
+          </td>
+          <td>
+            <img class="icons" src="./assets/images/JavaScript.png" alt="" />
+            <p>JavaScript</p>
+          </td>
+          <td>
+            <img class="icons" src="./assets/images/React.png" alt="" />
+            <p>React</p>
+          </td>
+        </tr>
+      </table>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" aria-labelledby="projects-heading">
+      <h2 id="projects-heading">PROJECTS</h2>
+
+      <table>
+        <tr>
+          <th>Project-1</th>
+          <th>Project-2</th>
+        </tr>
+        <tr>
+          <td>
+            <article class="project">
+              <h3>Bank Management System</h3>
+              <ul>
+                <li>
+                  Developed secure Banking System (Java, MySQL) with
+                  authentication, RBAC &amp; transaction processing.
+                </li>
+                <li>
+                  Optimized database performance by 40% using normalized
+                  schema and SQL indexing.
+                </li>
+                <li>
+                  Built real-time transaction engine with automated
+                  calculations &amp; 85% test coverage.
+                </li>
+              </ul>
+            </article>
+          </td>
+          <td>
+            <article class="project1">
+              <h3>Multi-Tenant Project Management Platform</h3>
+              <ul>
+                <li>
+                  Engineered SaaS platform with QR code-based onboarding,
+                  unique org codes, RBAC, and multi-tenant architecture
+                  reducing onboarding time by 85%.
+                </li>
+                <li>
+                  Built RESTful APIs with JWT authentication, CRUD operations
+                  and performance analytics.
+                </li>
+                <li>
+                  Optimized database performance by 60% using indexing and
+                  normalization.
+                </li>
+              </ul>
+            </article>
+          </td>
+        </tr>
+      </table>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" aria-labelledby="contact-heading">
+      <h2 id="contact-heading">CONTACTS</h2>
+      <address>
+        <ul class="contact-list">
+          <li>
+            <strong>Email:</strong>
+            <a href="mailto:usmanshaik.dev@gmail.com">usmanshaik.dev@gmail.com</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#projects">Projects</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact">Contacts</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./assets/Usman_Resume.pdf" download=""
-              >Download Resume</a
-            >
+          <li>
+            <strong>Phone:</strong>
+            <a href="tel:+917483186371">7483186371</a>
           </li>
         </ul>
-      </div>
-    </nav>
-
-    <div class="hero_container">
-      <video
-        class="hero_video"
-        autoplay
-        loop
-        src="./assets/Mohammed Usman Shaik.mp4"
-      ></video>
-    </div>
-
-    <!-- Header Section -->
-    <header>
-      <h1 class="head-text">Mohammed Usman Shaik - PORTFOLIO</h1>
-    </header>
-    \
-    <!-- Main Content -->
-    <main>
-      <!-- About Section -->
-      <section id="about" aria-labelledby="about-heading">
-        <div class="about-heading"><h2>ABOUT</h2></div>
-        <p class="about">
-          I am Mohammed Usman Shaik, an aspiring Software Engineer and Web
-          Developer who completed B.E in Computer Science and Engineering from
-          Vemana Institute of Technology (CGPA: 6.9/10). <br />
-          <br />
-          I specialize in building secure and scalable applications using Java,
-          Spring Boot, REST APIs, React.js and relational databases. I enjoy
-          solving complex problems, optimizing system performance, and designing
-          clean, maintainable software architectures. I am actively seeking
-          opportunities in Software Engineering, Full Stack Development, Web
-          Development where I can contribute, learn, and grow in a professional
-          environment.
-        </p>
-        <p class="github">
-          <a
-            href="https://www.github.com/usmanshaik-dev"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Click here to go to GitHub
-          </a>
-        </p>
-      </section>
-
-      <!-- Skills Section -->
-      <section id="skills" aria-labelledby="skills-heading">
-        <h2 id="skills-heading">SKILLS</h2>
-
-        <table class="icon-table" cellpadding="10px" cellspacing="90px">
-          <tr>
-            <td>
-              <img class="icons" src="./assets/images/java.png" alt="" />
-              <p>Java</p>
-            </td>
-            <td>
-              <img class="icons" src="./assets/images/python.png" alt="" />
-              <p>Python</p>
-            </td>
-            <td>
-              <img class="icons" src="./assets/images/MySQL.png" alt="" />
-              <p>MySQL</p>
-            </td>
-            <td>
-              <img class="icons" src="./assets/images/Springboot.png" alt="" />
-              <p>Spring</p>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <img class="icons" src="./assets/images/HTML.png" alt="" />
-              <p>HTML</p>
-            </td>
-            <td>
-              <img class="icons" src="./assets/images/CSS.png" alt="" />
-              <p>CSS</p>
-            </td>
-            <td>
-              <img class="icons" src="./assets/images/JavaScript.png" alt="" />
-              <p>JavaScript</p>
-            </td>
-            <td>
-              <img class="icons" src="./assets/images/React.png" alt="" />
-              <p>React</p>
-            </td>
-          </tr>
-        </table>
-      </section>
-
-      <!-- Projects Section -->
-      <section id="projects" aria-labelledby="projects-heading">
-        <h2 id="projects-heading">PROJECTS</h2>
-
-        <table>
-          <tr>
-            <th>Project-1</th>
-            <th>Project-2</th>
-          </tr>
-          <tr>
-            <td>
-              <article class="project">
-                <h3>Bank Management System</h3>
-                <ul>
-                  <li>
-                    Developed secure Banking System (Java, MySQL) with
-                    authentication, RBAC &amp; transaction processing.
-                  </li>
-                  <li>
-                    Optimized database performance by 40% using normalized
-                    schema and SQL indexing.
-                  </li>
-                  <li>
-                    Built real-time transaction engine with automated
-                    calculations &amp; 85% test coverage.
-                  </li>
-                </ul>
-              </article>
-            </td>
-            <td>
-              <article class="project1">
-                <h3>Multi-Tenant Project Management Platform</h3>
-                <ul>
-                  <li>
-                    Engineered SaaS platform with QR code-based onboarding,
-                    unique org codes, RBAC, and multi-tenant architecture
-                    reducing onboarding time by 85%.
-                  </li>
-                  <li>
-                    Built RESTful APIs with JWT authentication, CRUD operations
-                    and performance analytics.
-                  </li>
-                  <li>
-                    Optimized database performance by 60% using indexing and
-                    normalization.
-                  </li>
-                </ul>
-              </article>
-            </td>
-          </tr>
-        </table>
-      </section>
-
-      <!-- Contact Section -->
-      <section id="contact" aria-labelledby="contact-heading">
-        <h2 id="contact-heading">CONTACTS</h2>
-        <address>
-          <ul class="contact-list">
-            <li>
-              <strong>Email:</strong>
-              <a href="mailto:usmanshaik.dev@gmail.com"
-                >usmanshaik.dev@gmail.com</a
-              >
-            </li>
-            <li>
-              <strong>Phone:</strong>
-              <a href="tel:+917483186371">7483186371</a>
-            </li>
-          </ul>
-        </address>
-        <p class="via">
-          <strong class="ct">Connect with me via:</strong>
-          <a
-            href="https://www.linkedin.com/in/usmanshaik-dev"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="LinkedIn Profile"
-          >
-            <img
-              src="./assets/linkedin.png"
-              height="30"
-              width="30"
-              alt="LinkedIn"
-            />
-          </a>
-          <a
-            href="https://www.github.com/usmanshaik-dev"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="GitHub Profile"
-          >
-            <img
-              src="./assets/github.png"
-              height="30"
-              width="30"
-              alt="GitHub"
-            />
-          </a>
-        </p>
-      </section>
-    </main>
-
-    <!-- Footer -->
-    <footer>
-      <p class="reset">
-        <a class="reset-link" href="#">Back to top</a>
+      </address>
+      <p class="via">
+        <strong class="ct">Connect with me via:</strong>
+        <a href="https://www.linkedin.com/in/usmanshaik-dev" target="_blank" rel="noopener noreferrer"
+          aria-label="LinkedIn Profile">
+          <img src="./assets/linkedin.png" height="30" width="30" alt="LinkedIn" />
+        </a>
+        <a href="https://www.github.com/usmanshaik-dev" target="_blank" rel="noopener noreferrer"
+          aria-label="GitHub Profile">
+          <img src="./assets/github.png" height="30" width="30" alt="GitHub" />
+        </a>
       </p>
-    </footer>
-  </body>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p class="reset">
+      <a class="reset-link" href="#">Back to top</a>
+    </p>
+  </footer>
+</body>
+
 </html>
