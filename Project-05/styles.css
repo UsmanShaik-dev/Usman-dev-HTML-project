@@ -47,8 +47,9 @@ body {
   color: black;
   padding: 10px 20px;
   width: 60px;
+  height: 20px;
   font-size: 15px;
-  font-weight: 600;
+  font-weight: 700;
   border: 2px solid black;
   border-radius: 10px;
   display: block;
@@ -59,7 +60,8 @@ body {
 
 .w-btn:hover {
   width: 70px;
-  height: 20px;
+  height: 22px;
+  font-size: 16px;
 }
 
 .content {
@@ -182,7 +184,6 @@ label {
   font-weight: 900;
 }
 
-
 select {
   color: black;
 }
@@ -200,12 +201,11 @@ option {
   display: none;
 }
 
-
-input[type="text"]:focus ~ .tooltip{
+input[type="text"]:focus ~ .tooltip {
   display: block;
 }
 
-input[type="tel"]:focus ~ .tooltip{
+input[type="tel"]:focus ~ .tooltip {
   display: block;
 }
 
@@ -227,25 +227,23 @@ input[type="tel"]:focus ~ .tooltip{
   display: none;
 }
 
-
-
-.correct{
-height: 30px;
-margin: 2px;
-border: 2px solid rgb(3, 147, 3);
-border-radius: 10px;
-background-color: white;
-display: none;
-transform: scale(2px);
+.correct {
+  height: 30px;
+  margin: 2px;
+  border: 2px solid rgb(3, 147, 3);
+  border-radius: 10px;
+  background-color: white;
+  display: none;
+  transform: scale(2px);
 }
 
-.incorrect{
+.incorrect {
   height: 30px;
-margin: 2px;
-border: 2px solid rgb(255, 0, 0);
-border-radius: 10px;
-background-color: white;
-display: none;
+  margin: 2px;
+  border: 2px solid rgb(255, 0, 0);
+  border-radius: 10px;
+  background-color: white;
+  display: none;
 }
 
 input[type="email"]:valid ~ .status .correct {
@@ -255,4 +253,9 @@ input[type="email"]:valid ~ .status .correct {
 input[type="email"]:focus:invalid ~ .status .incorrect,
 input[type="email"]:focus:invalid ~ .status .valtip {
   display: inline;
+}
+
+input[type="radio"]:checked + label {
+  color: mediumblue;
+  font-size: 16px;
 }
