@@ -93,7 +93,7 @@ body {
 }
 
 .form {
-  width: 40%;
+  width: 30%;
   margin: 10px auto;
   padding: 10px;
 }
@@ -157,15 +157,16 @@ label {
 }
 
 #course {
-  margin-left: 40px;
-  width: 89%;
+  margin-left: -1px;
+  width: 96%;
 }
 
 .mode {
-  margin-left: 42px;
+  margin-left: -1px;
 }
 #comments {
-  margin-left: 40px;
+  margin-left: -1px;
+  width: 96%;
 }
 
 .btn {
