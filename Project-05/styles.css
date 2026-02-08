@@ -1,0 +1,258 @@
+@import url("https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&family=Orbitron:wght@400..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-family: "Merienda", cursive;
+}
+body {
+  background:
+    radial-gradient(circle at 10% 20%, #f6d6e8 0%, transparent 40%),
+    radial-gradient(circle at 40% 30%, #f062b6 0%, transparent 45%),
+    radial-gradient(circle at 70% 60%, #a2b1f4 0%, transparent 45%),
+    radial-gradient(circle at 85% 25%, #f1c3b8 0%, transparent 40%),
+    radial-gradient(
+      circle at 50% 50%,
+      #c6a0e8 0%,
+      #c6a0e8 30%,
+      transparent 60%
+    ),
+    #e9b3d7;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.welcome {
+  background-color: #4052e6;
+  height: 300px;
+  width: 300px;
+  margin: 200px auto;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 20px;
+}
+
+.w-heading {
+  text-align: center;
+  padding: 20px;
+}
+
+.w-para {
+  text-align: center;
+  padding: 40px;
+}
+
+.w-btn {
+  background-color: aqua;
+  color: black;
+  padding: 10px 20px;
+  width: 60px;
+  font-size: 15px;
+  font-weight: 600;
+  border: 2px solid black;
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto;
+  cursor: pointer;
+  text-align: center;
+}
+
+.w-btn:hover {
+  width: 70px;
+  height: 20px;
+}
+
+.content {
+  display: none;
+}
+
+#toggle:checked ~ .welcome {
+  display: none;
+}
+
+#toggle:checked ~ .content {
+  display: block;
+}
+
+.headtext {
+  padding: 20px;
+  background-color: aqua;
+  width: 40%;
+  margin: 20px auto;
+  text-align: center;
+  border-radius: 20px;
+  border: 2px solid #f062b6;
+}
+
+.heading {
+  background: linear-gradient(90deg, #ff00ff 0%, #1286ed 50%, #00a2ff 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.form {
+  width: 40%;
+  margin: 10px auto;
+  padding: 10px;
+}
+
+fieldset {
+  border-radius: 20px;
+  padding: 5px;
+  margin: 8px auto;
+  border: 2px solid #ff00ff;
+  background: linear-gradient(#c6a0e8, #6a84f7, rgb(0, 234, 255));
+}
+table {
+  padding: -10px;
+}
+
+legend {
+  background-color: aqua;
+  padding: 5px;
+  color: black;
+  border-radius: 10px;
+  border: 2px solid #6a84f7;
+}
+
+td {
+  padding: 7px 20px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="tel"],
+input[type="email"],
+input[type="date"],
+input[type="file"],
+select {
+  width: 100%;
+  padding: 9px;
+  border: 2px solid #f062b6;
+  border-radius: 8px;
+  color: #f062b6;
+}
+
+textarea {
+  resize: none;
+  width: 90%;
+  border: 2px solid #f062b6;
+  border-radius: 8px;
+}
+
+input[type="radio"] {
+  padding: 8px;
+  width: 15px;
+  height: 15px;
+}
+
+input[type="radio"] + label {
+  font-size: 13px;
+}
+
+label {
+  font-weight: 700;
+}
+
+#course {
+  margin-left: 40px;
+  width: 89%;
+}
+
+.mode {
+  margin-left: 42px;
+}
+#comments {
+  margin-left: 40px;
+}
+
+.btn {
+  display: flex;
+  gap: 8px;
+}
+
+.btn input {
+  background-color: rgba(4, 17, 249, 0.658);
+  color: rgb(255, 255, 255);
+  padding: 10px;
+  width: 100%;
+  border-radius: 10px;
+  border: 2px solid white;
+  font-size: 15px;
+  font-weight: 900;
+}
+
+
+select {
+  color: black;
+}
+option {
+  color: black;
+}
+
+.tooltip {
+  width: 95%;
+  background-color: #4052e6;
+  padding: 5px;
+  margin: 5px auto;
+  border: 2px solid #4052e6;
+  border-radius: 10px;
+  display: none;
+}
+
+
+input[type="text"]:focus ~ .tooltip{
+  display: block;
+}
+
+input[type="tel"]:focus ~ .tooltip{
+  display: block;
+}
+
+.status {
+  display: inline-flex;
+  align-items: center;
+  margin-left: 0px;
+  width: 210px;
+}
+
+.valtip {
+  width: 45%;
+  background-color: #4052e6;
+  padding: 5px;
+  margin: 5px auto;
+  border: 2px solid #4052e6;
+  border-radius: 10px;
+  font-size: 11px;
+  display: none;
+}
+
+
+
+.correct{
+height: 30px;
+margin: 2px;
+border: 2px solid rgb(3, 147, 3);
+border-radius: 10px;
+background-color: white;
+display: none;
+transform: scale(2px);
+}
+
+.incorrect{
+  height: 30px;
+margin: 2px;
+border: 2px solid rgb(255, 0, 0);
+border-radius: 10px;
+background-color: white;
+display: none;
+}
+
+input[type="email"]:valid ~ .status .correct {
+  display: inline;
+}
+
+input[type="email"]:focus:invalid ~ .status .incorrect,
+input[type="email"]:focus:invalid ~ .status .valtip {
+  display: inline;
+}
